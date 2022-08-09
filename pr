@@ -8,6 +8,7 @@ pipeline {
         }
         stage('build') { 
             steps {
+               git 'https://github.com/shubhamkalsait/studentapp-ui.git' 
                sh 'mvn package'
             }
         }
